@@ -22,7 +22,7 @@ app = FastAPI(title="AIVOA RCA API", version="1.0.0")
 rca_workflow = build_rca_workflow()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:5174", "http://127.0.0.1:5174"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:5174", "http://127.0.0.1:5174", "https://aivoa-frontend-ps2s.onrender.com"],
     allow_credentials=True, allow_methods=["*"], allow_headers=["*"],
 )
 
